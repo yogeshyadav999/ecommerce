@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/Bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#signup-form">SignUp</button>
+                <div class="modal" id="signup-form">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a href="#"><span>SHOP</span>LANE</a>
+                                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                <h3 class="modal-title">Register to Shoplane</h3>
+                            </div>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" for="fname" 
+                        placeholder="Enter First Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" for="fname" 
+                        placeholder="Enter Last Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="mob">Mobile No.</label>
+                        <input type="tel" for="mob" 
+                        placeholder="Enter Mobile Number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Id</label>
+                        <input type="email" for="email" 
+                        placeholder="Enter Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Password</label>
+                        <input type="password" for="pass" 
+                        placeholder="Enter Password" class="form-control">
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block">Register</button>
+                    <div class=" mt-4">
+                        <span>Already on Shoplane?</span>
+                        <a href="#" data-toggle="modal" data-target="#signin-form">Login</a>
+                    </div>
+                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#signin-form">SignIn</button>
+                <div class="modal" id="signin-form">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a href="#" class="navbar-brand"><span>SHOP</span>LANE</a>
+                                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                <h3 class="modal-title">Login to Shoplane</h3>
+                            </div>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="uname">UserName</label>
+                        <input type="text" for="uname" 
+                        placeholder="Enter Username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Password</label>
+                        <input type="password" for="pass" 
+                        placeholder="Enter Password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                    <a href="#">Forget password?</a><br>
+                </div>
+                    <button class="btn btn-primary btn-block">Log in</button>
+                    <div class=" mt-4">
+                        <span>New to Shoplane?</span>
+                        <a href="#" data-toggle="modal" data-target="#signup-form">Register Now</a>
+                    </div>
+                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
